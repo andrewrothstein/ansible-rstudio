@@ -16,9 +16,12 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - trusty
+        - xenial
 
-  categories:
-    - development
+  galaxy_tags:
+    - r
+    - rstudio
+    - datascience
 
 dependencies: []
   
