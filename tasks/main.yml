@@ -7,6 +7,14 @@
     - "{{ansible_distribution}}.yml"
     - "{{ansible_os_family}}.yml"
 
+- name: install dep pkgs
+  become: yes
+  become_user: root
+  with_items: '{{rstudio_dep_pkgs|default([])}}'
+  package:
+    name: '{{item}}'
+    state: present
+    
 - name: download pkg...
   become: yes
   become_user: root
