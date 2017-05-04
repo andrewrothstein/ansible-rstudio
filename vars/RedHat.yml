@@ -1,17 +1,2 @@
 ---
 rstudio_pkg_suffix : x86_64.rpm
-
-rstudio_dep_pkgs:
-  - ant
-  - boost-devel
-  - bzip2-devel
-  - cmake
-  - gstreamer-devel
-  - gstreamer-plugins-base-devel
-  - libffi
-  - libuuid-devel
-  - openssl-devel
-  - pam-devel
-  - pango-devel
-  - xml-commons-apis
-  - zlib-devel

@@ -21,9 +21,21 @@ galaxy_info:
         - xenial
 
   galaxy_tags:
-    - r
+    - rlang
     - rstudio
+    - statistics
     - datascience
 
-dependencies: []
+dependencies:
+  - role: andrewrothstein.epel
+    version: v1.0.3
+  - role: andrewrothstein.git
+    version: v3.0.0
+  - role: andrewrothstein.gcc-toolbox
+    version: v1.0.4
+  - role: andrewrothstein.java-oracle-jdk
+    version: v1.0.2
+  - role: andrewrothstein.r
+    version: v1.0.6
+
   

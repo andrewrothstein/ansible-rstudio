@@ -1,6 +1,6 @@
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-rstudio.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-rstudio)
 andrewrothstein.rstudio
 =========
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-rstudio.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-rstudio)
 
 Installs [RStudio](https://www.rstudio.com/)
 
