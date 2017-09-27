@@ -15,4 +15,4 @@
     dest: /tmp/{{rstudio_pkg}}
     mode: 0644
 
-- include: '{{rstudio_installer|default("package")}}.yml'
+- include_tasks: '{{rstudio_installer|default("package")}}.yml'
