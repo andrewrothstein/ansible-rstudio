@@ -9,7 +9,7 @@ dependencies:
   openjdk_app: jdk
   version: v2.0.0
 - role: andrewrothstein.r
-  version: v1.0.10
+  version: v1.0.11
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
@@ -31,7 +31,16 @@ galaxy_info:
     - 23
     - 24
     - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
   - name: Ubuntu
     versions:
     - trusty
     - xenial
+    - bionic
+  - name: Debian
+    versions:
+    - stretch
