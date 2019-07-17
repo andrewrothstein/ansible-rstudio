@@ -1,5 +1,6 @@
 ---
 rstudio_os: debian{{ ansible_distribution_major_version }}
 rstudio_arch: amd64
+rstudio_urlarch: x86_64
 rstudio_pkg_type: deb
 rstudio_installer: deb

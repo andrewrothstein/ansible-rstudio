@@ -13,8 +13,8 @@ rstudio_checksums:
         xenial: md5:c142d69c210257fb10d18c045fff13c7
         # https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.1335-amd64.deb
         bionic: md5:71a8d1990c0d97939804b46cfb0aea75
-        # https://download1.rstudio.org/desktop/debian9/amd64/rstudio-1.2.1335-amd64.deb
-        debian9: md5:d41d8cd98f00b204e9800998ecf8427e
+        # https://download1.rstudio.org/desktop/debian9/x86_64/rstudio-1.2.1335-amd64.deb
+        debian9: md5:1e32d4d6f6e216f086a81ca82ef65a91
     x86_64:
       rpm:
         # https://download1.rstudio.org/desktop/centos7/x86_64/rstudio-1.2.1335-x86_64.rpm
