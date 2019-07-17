@@ -2,13 +2,14 @@ dependencies:
 - role: andrewrothstein.epel
   version: v1.0.8
 - role: andrewrothstein.git
-  version: v3.0.1
+  version: v3.0.4
 - role: andrewrothstein.gcc-toolbox
   version: v1.0.11
 - role: andrewrothstein.openjdk
-  version: v1.0.0
+  openjdk_app: jdk
+  version: v2.0.0
 - role: andrewrothstein.r
-  version: v1.0.7
+  version: v1.0.10
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock

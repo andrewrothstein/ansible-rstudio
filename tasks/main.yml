@@ -1,23 +1,24 @@
 ---
 # tasks file for rstudio
 - name: resolve platform specific vars
-  include_vars: '{{item}}'
+  include_vars: '{{item }}'
   with_first_found:
     - files:
-        - '{{ansible_distribution}}-{{ansible_distribution_release}}.yml'
-        - '{{ansible_distribution}}.yml'
-        - '{{ansible_os_family}}.yml'
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
       skip: true
       paths:
-        - '{{role_path}}/vars'
+        - '{{ role_path }}/vars'
 
 - name: download pkg...
   become: yes
   become_user: root
   get_url:
-    url: '{{rstudio_pkg_url}}'
-    dest: /tmp/{{rstudio_pkg}}
-    checksum: '{{rstudio_checksum}}'
+    url: '{{ rstudio_pkg_url }}'
+    dest: /tmp/{{ rstudio_pkg }}
+    checksum: '{{ rstudio_checksum }}'
     mode: 0644
 
-- include_tasks: '{{rstudio_installer|default("package")}}.yml'
+- include_tasks:
+    file: '{{ rstudio_installer | default("package") }}.yml'

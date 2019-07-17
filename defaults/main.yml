@@ -1,10 +1,27 @@
 ---
 # defaults file for rstudio
-rstudio_ver : '1.1.447'
+rstudio_ver : '1.2.1335'
 
 # https://www.rstudio.com/products/rstudio/download/#download
 rstudio_checksums:
-  '1.1.447':
-    amd64.deb: md5:1eecbf2c80fb329a8a1bcb92a68e459e
-    x86_64.rpm: md5:0dd507d4ece283a64b63f759dc9e4fad
-rstudio_mirror: http://download1.rstudio.org
+  '1.2.1335':
+    amd64:
+      deb:
+        # https://download1.rstudio.org/desktop/trusty/amd64/rstudio-1.2.1335-amd64.deb
+        trusty: md5:c1b07d0511469abfe582919b183eee83
+        # https://download1.rstudio.org/desktop/xenial/amd64/rstudio-1.2.1335-amd64.deb
+        xenial: md5:c142d69c210257fb10d18c045fff13c7
+        # https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.1335-amd64.deb
+        bionic: md5:71a8d1990c0d97939804b46cfb0aea75
+        # https://download1.rstudio.org/desktop/debian9/amd64/rstudio-1.2.1335-amd64.deb
+        debian9: md5:d41d8cd98f00b204e9800998ecf8427e
+    x86_64:
+      rpm:
+        # https://download1.rstudio.org/desktop/centos7/x86_64/rstudio-1.2.1335-x86_64.rpm
+        centos7: md5:296b6ef88969a91297fab6545f256a7a
+        # https://download1.rstudio.org/desktop/opensuse/x86_64/rstudio-1.2.1335-x86_64.rpm
+        opensuse: md5:c65424b06ef6737279d982db9eefcae1
+        # https://download1.rstudio.org/desktop/opensuse15/x86_64/rstudio-1.2.1335-x86_64.rpm
+        opensuse15: md5:2795a63c7efd8e2aa2dae86ba09a81e5
+
+rstudio_mirror: http://download1.rstudio.org/desktop

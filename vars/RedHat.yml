@@ -1,2 +1,5 @@
 ---
-rstudio_pkg_suffix : x86_64.rpm
+rstudio_os: centos7
+rstudio_arch: x86_64
+rstudio_pkg_type: rpm
+
