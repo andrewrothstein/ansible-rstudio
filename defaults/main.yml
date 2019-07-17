@@ -1,6 +1,6 @@
 ---
 # defaults file for rstudio
-rstudio_ver : '1.2.1335'
+rstudio_ver: '1.2.1335'
 
 # https://www.rstudio.com/products/rstudio/download/#download
 rstudio_checksums:
