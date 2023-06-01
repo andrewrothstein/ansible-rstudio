@@ -1,0 +1,11 @@
+---
+- name: andrewrothstein.epel
+  version: v1.1.8
+- name: andrewrothstein.git
+  version: v3.2.3
+- name: andrewrothstein.gcc-toolbox
+  version: v1.1.10
+- name: andrewrothstein.temurin
+  version: 1.1.5
+- name: andrewrothstein.r
+  version: v2.0.0

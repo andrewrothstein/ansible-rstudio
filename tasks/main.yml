@@ -1,5 +1,15 @@
 ---
 # tasks file for rstudio
+- include_role:
+    name: andrewrothstein.epel
+- include_role:
+    name: andrewrothstein.git
+- include_role:
+    name: andrewrothstein.gcc-toolbox
+- include_role:
+    name: andrewrothstein.temurin
+  vars:
+    openjdk_app: jdk
 - name: resolve platform specific vars
   include_vars: '{{ item }}'
   with_first_found:
@@ -11,14 +21,14 @@
       paths:
         - '{{ role_path }}/vars'
 
-- name: download pkg...
-  become: yes
+- name: "downloading {{ rstudio_pkg_url }} to {{ rstudio_tmp_pkg }}..."
+  become: true
   become_user: root
   get_url:
     url: '{{ rstudio_pkg_url }}'
-    dest: /tmp/{{ rstudio_pkg }}
+    dest: '{{ rstudio_tmp_pkg }}'
     checksum: '{{ rstudio_checksum }}'
     mode: 0644
 
 - include_tasks:
-    file: '{{ rstudio_installer | default("package") }}.yml'
+    file: '{{ rstudio_installer }}.yml'

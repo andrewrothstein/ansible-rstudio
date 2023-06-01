@@ -1,27 +1,23 @@
 ---
 # defaults file for rstudio
-rstudio_ver: '1.2.1335'
+rstudio_ver: '2023.03.1-446'
 
-# https://www.rstudio.com/products/rstudio/download/#download
+# https://posit.co/download/rstudio-desktop/
+rstudio_mirror: http://download1.rstudio.org/electron
+
 rstudio_checksums:
-  '1.2.1335':
-    amd64:
-      deb:
-        # https://download1.rstudio.org/desktop/trusty/amd64/rstudio-1.2.1335-amd64.deb
-        trusty: md5:c1b07d0511469abfe582919b183eee83
-        # https://download1.rstudio.org/desktop/xenial/amd64/rstudio-1.2.1335-amd64.deb
-        xenial: md5:c142d69c210257fb10d18c045fff13c7
-        # https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.1335-amd64.deb
-        bionic: md5:71a8d1990c0d97939804b46cfb0aea75
-        # https://download1.rstudio.org/desktop/debian9/x86_64/rstudio-1.2.1335-amd64.deb
-        debian9: md5:1e32d4d6f6e216f086a81ca82ef65a91
-    x86_64:
-      rpm:
-        # https://download1.rstudio.org/desktop/centos7/x86_64/rstudio-1.2.1335-x86_64.rpm
-        centos7: md5:296b6ef88969a91297fab6545f256a7a
-        # https://download1.rstudio.org/desktop/opensuse/x86_64/rstudio-1.2.1335-x86_64.rpm
-        opensuse: md5:c65424b06ef6737279d982db9eefcae1
-        # https://download1.rstudio.org/desktop/opensuse15/x86_64/rstudio-1.2.1335-x86_64.rpm
-        opensuse15: md5:2795a63c7efd8e2aa2dae86ba09a81e5
-
-rstudio_mirror: http://download1.rstudio.org/desktop
+  '2023.03.1-446':
+    deb:
+      # https://download1.rstudio.org/electron/bionic/amd64/rstudio-2023.03.1-446-amd64.deb
+      bionic: md5:3379aba31fced91e987f75f6186675ea
+      # https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.03.1-446-amd64.deb
+      jammy: md5:812a47338135ee6fbb5c363dc31109c0
+    rpm:
+      # https://download1.rstudio.org/electron/centos7/x86_64/rstudio-2023.03.1-446-x86_64.rpm
+      centos7: md5:8be19f588db58964458d5e2612821a70
+      # https://download1.rstudio.org/electron/opensuse15/x86_64/rstudio-2023.03.1-446-x86_64.rpm
+      opensuse15: md5:7e2904d804814be3ffdfff93237d1373
+      # https://download1.rstudio.org/electron/rhel8/x86_64/rstudio-2023.03.1-446-x86_64.rpm
+      rhel8: md5:7b33fa2880b615b314f69a1acd5a08bc
+      # https://download1.rstudio.org/electron/rhel9/x86_64/rstudio-2023.03.1-446-x86_64.rpm
+      rhel9: md5:80ba455bc726da124a4a1a7305abf9c9

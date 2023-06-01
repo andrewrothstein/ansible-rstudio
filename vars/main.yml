@@ -2,4 +2,5 @@
 # vars file for rstudio
 rstudio_pkg: rstudio-{{ rstudio_ver }}-{{ rstudio_arch }}.{{ rstudio_pkg_type }}
 rstudio_pkg_url: '{{ rstudio_mirror }}/{{ rstudio_os }}/{{ rstudio_urlarch | default(rstudio_arch) }}/{{ rstudio_pkg }}'
-rstudio_checksum: '{{ rstudio_checksums[rstudio_ver][rstudio_arch][rstudio_pkg_type][rstudio_os] }}'
+rstudio_checksum: '{{ rstudio_checksums[rstudio_ver][rstudio_pkg_type][rstudio_os] }}'
+rstudio_tmp_pkg: '{{ rstudio_tmp_dir | default("/tmp") }}/{{ rstudio_pkg }}'

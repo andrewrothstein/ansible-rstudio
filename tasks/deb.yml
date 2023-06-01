@@ -1,6 +1,13 @@
 ---
-- name: install R Studio deb
-  become: yes
+- name: adding apt key
+  become: true
+  become_user: root
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 3F32EE77E331692F
+- name: apt/deb installing {{ rstudio_tmp_pkg }}...
+  become: true
   become_user: root
   apt:
-    deb: /tmp/{{ rstudio_pkg }}
+    deb: '{{ rstudio_tmp_pkg }}'
+    state: present

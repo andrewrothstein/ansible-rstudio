@@ -1,17 +1,6 @@
-- centos_7
-- centos_8
-- debian_buster
-- debian_stretch
-- fedora_23
-- fedora_24
-- fedora_25
-- fedora_26
-- fedora_27
-- fedora_28
-- fedora_29
-- fedora_30
-- fedora_31
-- fedora_32
-- ubi8_8.0
-- ubuntu_bionic
-- ubuntu_xenial
+---
+- debian_bookworm
+- debian_bullseye
+- rockylinux_8
+- rockylinux_9
+- ubuntu_jammy

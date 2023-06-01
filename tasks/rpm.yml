@@ -1,0 +1,11 @@
+---
+- name: trust rpm key
+  rpm_key:
+    state: present
+    key: '{{ role_path }}/files/rstudio-signing.key'
+- name: installing {{ rstudio_tmp_pkg }}...
+  become: true
+  become_user: root
+  rpm:
+    name: '{{ rstudio_tmp_pkg }}'
+    state: present

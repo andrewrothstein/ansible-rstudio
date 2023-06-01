@@ -1,6 +1,6 @@
 andrewrothstein.rstudio
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-rstudio.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-rstudio)
+![Build Status](https://github.com/andrewrothstein/ansible-rstudio/actions/workflows/build.yml/badge.svg)
 
 Installs [RStudio](https://www.rstudio.com/)
 
