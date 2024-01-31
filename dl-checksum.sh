@@ -26,7 +26,7 @@ dl_ver() {
     VER=$1
     printf "  '%s':\n" $VER
     echo "    deb:"
-    dl $VER bionic amd64 amd64 deb
+    dl $VER focal amd64 amd64 deb
     dl $VER jammy amd64 amd64 deb
     echo "    rpm:"
     dl $VER centos7 x86_64 x86_64 rpm
@@ -35,4 +35,4 @@ dl_ver() {
     dl $VER rhel9 x86_64 x86_64 rpm
 }
 
-dl_ver ${1:-"2023.03.1-446"}
+dl_ver ${1:-"2023.12.1-402"}

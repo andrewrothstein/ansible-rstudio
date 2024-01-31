@@ -1,5 +1,5 @@
 ---
 rstudio_os: '{{ ansible_distribution_release }}'
-rstudio_arch: amd64
+rstudio_arch: '{{ rstudio_arch_map[ansible_architecture] }}'
 rstudio_pkg_type: deb
 rstudio_installer: deb

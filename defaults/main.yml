@@ -1,6 +1,9 @@
 ---
 # defaults file for rstudio
-rstudio_ver: '2023.03.1-446'
+rstudio_ver: '2023.12.1-402'
+
+rstudio_arch_map:
+  x86_64: amd64
 
 # https://posit.co/download/rstudio-desktop/
 rstudio_mirror: http://download1.rstudio.org/electron
@@ -21,3 +24,18 @@ rstudio_checksums:
       rhel8: md5:7b33fa2880b615b314f69a1acd5a08bc
       # https://download1.rstudio.org/electron/rhel9/x86_64/rstudio-2023.03.1-446-x86_64.rpm
       rhel9: md5:80ba455bc726da124a4a1a7305abf9c9
+  '2023.12.1-402':
+    deb:
+      # https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.12.1-402-amd64.deb
+      focal: md5:5d58488f640f913d6f18637de9a287c8
+      # https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.12.1-402-amd64.deb
+      jammy: md5:5fc09899414b15e46463bafc6d6195dc
+    rpm:
+      # https://download1.rstudio.org/electron/centos7/x86_64/rstudio-2023.12.1-402-x86_64.rpm
+      centos7: md5:dcdd0cde6230424b8b1be47be29fec77
+      # https://download1.rstudio.org/electron/opensuse15/x86_64/rstudio-2023.12.1-402-x86_64.rpm
+      opensuse15: md5:b5b0af9ca198ea7d132b9b0f53817375
+      # https://download1.rstudio.org/electron/rhel8/x86_64/rstudio-2023.12.1-402-x86_64.rpm
+      rhel8: md5:3155366fb0f880c19d66c3d2f0a66a0f
+      # https://download1.rstudio.org/electron/rhel9/x86_64/rstudio-2023.12.1-402-x86_64.rpm
+      rhel9: md5:178df26c32a0db81186c8623335f6f2f

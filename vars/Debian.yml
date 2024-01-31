@@ -1,5 +1,8 @@
 ---
-rstudio_os: bionic
-rstudio_arch: amd64
+rstudio_debian_os_map:
+  bullseye: focal
+  bookworm: jammy
+rstudio_os: '{{ rstudio_debian_os_map[ansible_distribution_release] }}'
+rstudio_arch: '{{ rstudio_arch_map[ansible_architecture] }}'
 rstudio_pkg_type: deb
 rstudio_installer: deb

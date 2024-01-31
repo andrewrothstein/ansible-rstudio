@@ -4,22 +4,23 @@ galaxy_info:
   company: BlackRock
   description: RStudio role
   galaxy_tags:
-  - rlang
-  - rstudio
-  - statistics
-  - datascience
-  license:
-  - MIT
-  min_ansible_version: 1.2
+    - rlang
+    - rstudio
+    - statistics
+    - datascience
+  license: MIT
+  min_ansible_version: '1.2'
+  namespace: andrewrothstein
   platforms:
-  - name: EL
-    versions:
-    - 8
-    - 9
-  - name: Ubuntu
-    versions:
-    - jammy
-  - name: Debian
-    versions:
-    - bookworm
-    - bullseye
+    - name: Debian
+      versions:
+        - bookworm
+        - bullseye
+    - name: EL
+      versions:
+        - '8'
+        - '9'
+    - name: Ubuntu
+      versions:
+        - jammy
+  role_name: rstudio
